@@ -1,0 +1,198 @@
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+/*familia tipográfica: 'Roboto', sans-serif;*/
+
+/*  Estilo a */
+a{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo Header */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: brown;
+}
+
+/* Header Li */
+.header li{
+    display: inline-block;
+}
+
+/* Parallax */
+.main-fondo{
+    font-family: roboto, sans-serif;
+    background-image: url("../images/imagen-index.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.parrafo{
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Grilla Index */
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh 200px;
+    grid-template-areas: "seccion1"
+                         "seccion2";
+}
+
+/* Grilla Nosotros */
+.main-grid-nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh 200px;
+    grid-template-areas: "seccion1"
+                         "seccion2";
+}
+
+.seccion1{
+    grid-area: seccion1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/imagen-index.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.seccion2{
+    grid-area: seccion2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+}
+
+/* Estilo h1 */
+h1{
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+}
+
+/* Estilo titulo */
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+/* Imagenes */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Grilla Catalogo */
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Media Query Tablet */
+@media screen and (max-width: 760){
+    .catalogo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+
+/* Media Query Mobile */
+@media screen and (max-width: 350px){
+.catalogo{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.footer{
+    flex-direction: column;
+}
+}
+
+/* Media Query Desktop */
+@media screen and (min-width: 761px){
+    .catalogo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    }
+
+/* Grilla Tarjeta */
+.tarjeta-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    gap: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Estilo Button */
+.button{
+    width: 200px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(56, 50, 50, 0.445);
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+
+/* Estilo Footer */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 150px;
+    background-color: brown; 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer ul li{
+    list-style: none;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
